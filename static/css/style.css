@@ -8,22 +8,51 @@ body {
 }
 
 /*-----Background-----*/
-.bg {
+.bg-index {
   background-image: url("/static/img/fitness.jpg");
   background-size: cover;
-  height: 100%;
+  height: 110%;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   width: 100%;
   opacity: 0.7;
   z-index: -1;
 }
 
-/*-----Navbar change the navbar colour to the logo and change the heading colours-----*/
+/* .bg-plans {
+  background-image: url("/static/img/rope.jpg");
+  background-size: cover;
+  height: 200%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  z-index: -1;
+} */
 
-.navbar-white .navbar-nav .nav-link {
+
+/*-----Navbar-----*/
+
+.navbar-light .navbar-nav .nav-link {
   color: #c638a0;
   font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/*-----Jumbotron-----*/
+
+.jumbotron {
+   border-radius: 0.8rem;
+   background: rgba(245,245,245, 0.8); 
+   text-align: center;
+   position: relative;
+   top: 1rem;
+   color: #c638a0;
+}
+
+hr {
+   background-color:#FF717C;
+   width: 75%;
 }
 
 /*-----Homepage-----*/
@@ -47,10 +76,23 @@ body {
   }
 }
 
+.fitness-title {
+    letter-spacing: 0.2rem;
+    font-weight: 800;
+}
+
 .logo {
+    height: 15rem;
+    width: 15rem;
+}
+
+@media only screen and (min-width: 829px) {
+  .logo {
   height: 20rem;
   width: 20rem;
 }
+}
+
 
 .purple {
   color: #c638a0;
@@ -62,4 +104,22 @@ body {
 
 .font-size {
   font-size: 1rem;
+}
+
+/*-----Plans-----*/
+
+.center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.color-pink {
+    color: #c638a0;
+}
+
+.color-orange {
+    color:#FF717C;
 }

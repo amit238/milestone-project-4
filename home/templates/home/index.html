@@ -1,23 +1,23 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <title>Welcome to Fitness Freaks! {% block extra_title %}{% endblock %}</title>
-<div class="container-fluid bg">
+<div class="container-fluid bg-index">
   <div class="row">
     <div class="col-12">
       <div class="card homepage-card">
         <img
           class="card-img-top logo mx-auto"
           src="{% static 'img/fitness-freaks.jpg' %}"
-          alt="Card image cap"
+          alt="Fitness Freaks logo"
         />
         <div class="card-body">
-          <h3 class="card-title">Welcome to Fitness Freaks!</h3>
+          <h3 class="card-title fitness-title">Welcome to Fitness Freaks!</h3>
           <hr />
           <h4 class="underline">About us</h4>
           <p class="font-size">
             We are a fitness based company and we are here to help our clients
             out! Our aim is to help you find the perfect nutrition plan for your
             body. Whether you feel like you need to lean up or bulk up the
-            <a class="purple" href="">Plans</a> page will have everything you need!
+            <a class="purple" href="{% url 'plans' %}">Plans</a> page will have everything you need!
           </p>
         </div>
       </div>
