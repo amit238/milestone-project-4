@@ -7,8 +7,36 @@ body {
   font-size: 10px;
 }
 
+.center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+.color-pink {
+    color: #c638a0;
+}
+
+.color-orange {
+    color:#FF717C;
+}
+
+/*----HR-----*/
+
+hr {
+   background-color:#FF717C;
+   width: 75%;
+}
+
+.small-hr {
+    background-color:#FF717C;
+    width: 35%;
+}
+
 /*-----Background-----*/
-.bg-index {
+/* .bg-index {
   background-image: url("/static/img/fitness.jpg");
   background-size: cover;
   height: 110%;
@@ -17,7 +45,7 @@ body {
   width: 100%;
   opacity: 0.7;
   z-index: -1;
-}
+} */
 
 /* .bg-plans {
   background-image: url("/static/img/rope.jpg");
@@ -39,20 +67,19 @@ body {
   font-weight: 600;
 }
 
+ul.nav a:hover { 
+    color: #c638a0; 
+}
+
 /*-----Jumbotron-----*/
 
-.jumbotron {
+.jmb-plans {
    border-radius: 0.8rem;
    background: rgba(245,245,245, 0.8); 
    text-align: center;
    position: relative;
    top: 1rem;
    color: #c638a0;
-}
-
-hr {
-   background-color:#FF717C;
-   width: 75%;
 }
 
 /*-----Homepage-----*/
@@ -71,13 +98,12 @@ hr {
     width: 50rem;
     margin: 0 auto;
     padding-top: 2rem;
-    position: relative;
-    top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
 .fitness-title {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     font-weight: 800;
 }
 
@@ -108,18 +134,15 @@ hr {
 
 /*-----Plans-----*/
 
-.center {
-    text-align: center;
+
+/*-----Contact-----*/
+
+.jmb-contact {
+   background: rgba(245,245,245, 0.8); 
+   text-align: center;
+   color: #c638a0;
 }
 
-.margin-top {
-    margin-top: 1rem;
-}
-
-.color-pink {
-    color: #c638a0;
-}
-
-.color-orange {
-    color:#FF717C;
+.size {
+    font-size: 1rem;
 }

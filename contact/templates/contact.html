@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<title>Fitness Freaks - Contact Us</title>
+<div class="container-fluid">
+<div class="row row-flex contact jumbotron jmb-contact">
+{% comment %} Shows the address where users can mail. {% endcomment %}
+    <div class="col-md-6 size">
+        <h2><strong>Contact Us</strong></h2>
+        <p>111<br>
+        London<br>
+        WW2 1TT</p>
+        <hr class="small-hr">
+        <p>Email: <a href="mailto:FitnessFreaks@FFPLC.com">FitnessFreaks@FFPLC.com</a></p>
+        <hr class="small-hr">
+        <p>phone: 0800 808 8000</p>
+    </div>
+    {% comment %} Shows where we are located. {% endcomment %}
+    <div class="col-md-6">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810586714!2d-0.24168213842172923!3d51.52877184110629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1595119405080!5m2!1sen!2suk"  width="350" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+</div>
+</div>
+{% endblock %}
