@@ -23,6 +23,12 @@ body {
     color:#FF717C;
 }
 
+label {
+    color: #c638a0;
+}
+
+
+
 /*----HR-----*/
 
 hr {
@@ -117,11 +123,6 @@ ul.nav a:hover {
   height: 20rem;
   width: 20rem;
 }
-}
-
-
-.purple {
-  color: #c638a0;
 }
 
 .underline {

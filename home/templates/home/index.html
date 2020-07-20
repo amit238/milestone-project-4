@@ -6,18 +6,18 @@
       <div class="card homepage-card">
         <img
           class="card-img-top logo mx-auto"
-          src="{% static 'img/fitness-freaks.jpg' %}"
+          src="{% static 'img/fitness-freaks.png' %}"
           alt="Fitness Freaks logo"
         />
         <div class="card-body">
-          <h3 class="card-title fitness-title">Welcome to Fitness Freaks!</h3>
+          <h3 class="card-title fitness-title color-pink">Welcome to Fitness Freaks!</h3>
           <hr />
-          <h4 class="underline">About us</h4>
-          <p class="font-size">
+          <h4 class="underline color-pink">About us</h4>
+          <p class="font-size color-pink">
             We are a fitness based company and we are here to help our clients
-            out! Our aim is to help you find the perfect nutrition plan for your
-            body. Whether you feel like you need to lean up or bulk up the
-            <a class="purple" href="{% url 'plans' %}">Plans</a> page will have everything you need!
+            out! Our aim is to help you find the perfect nutrition and exercise plan for your
+            body. So what are you waiting for?
+            <a class="color-orange" href="{% url 'account_signup' %}">Register Now!</a> Or if you already have an account <a class="color-orange" href="{% url 'account_login' %}">Login Here.</a>
           </p>
         </div>
       </div>
