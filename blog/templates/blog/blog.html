@@ -1,1 +1,36 @@
-{% extends "base.html" %}
+{% extends 'base.html' %} {% block content %} 
+ <div class="row">
+    <div class="col-12">
+      <div class="jumbotron jumbotron-fluid jmb-all">
+        <h2 class="display-4 fitness-title">Public Blog!</h2>
+        <hr />
+        <p class="lead">
+          Welcome to Fitness Freaks blog, where our customers talk about their journey. Whether you've just started or finished you can write anytime throughtout your journey!
+        </p>
+      </div>
+    </div>
+  </div>
+{% for post in posts %}
+<div class="container">
+  <div class="card mb-4 margin-top">
+    <div class="card-body">
+      <div class="row center">
+        <div class="col-12 col-md-6 form-text">
+          <span class="blog-title color-pink size"><strong>Name:</strong></span>
+          <span class="low-weight color-orange size"> {{ post.author }} </span>
+        </div>
+        <div class="col-12 col-md-6 form-text">
+          <span class="blog-title color-pink size"> <strong>Title:</strong></span>
+          <span class="low-weight color-orange size"> {{ post.title }}</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 form-text description">
+          <i aria-hidden="true"></i>
+          <span class="low-weight size-s color-pink"><br />{{ post.body }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} {% endblock %}

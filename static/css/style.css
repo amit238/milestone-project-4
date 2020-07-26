@@ -27,6 +27,17 @@ label {
     color: #c638a0;
 }
 
+.size {
+    font-size: 1rem;
+}
+
+.size-s {
+    font-size: 0.8rem;
+}
+
+.size-b {
+    font-size: 1.2rem
+}
 
 
 /*----HR-----*/
@@ -70,7 +81,6 @@ hr {
 .navbar-light .navbar-nav .nav-link {
   color: #c638a0;
   font-size: 0.8rem;
-  font-weight: 600;
 }
 
 ul.nav a:hover { 
@@ -79,7 +89,7 @@ ul.nav a:hover {
 
 /*-----Jumbotron-----*/
 
-.jmb-plans {
+.jmb-all {
    border-radius: 0.8rem;
    background: rgba(245,245,245, 0.8); 
    text-align: center;
@@ -144,6 +154,9 @@ ul.nav a:hover {
    color: #c638a0;
 }
 
-.size {
+/*-----Blog-----*/
+
+/* .blog-title {
     font-size: 1rem;
-}
+    
+} */

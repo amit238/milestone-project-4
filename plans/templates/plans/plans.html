@@ -1,86 +1,39 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <title>Fitness Freaks - Plans</title>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div class="jumbotron jumbotron-fluid jmb-plans">
-        <h2 class="display-4 fitness-title">Find a Plan!</h2>
-        <hr />
-        <p class="lead">
-          Whether youre looking to lean up or bulk up, we have a range of
-          gym/nutrition plans to help you out.
-        </p>
-      </div>
+<div class="row">
+  <div class="col-12">
+    <div class="jumbotron jumbotron-fluid jmb-all">
+      <h2 class="display-4 fitness-title">Find a Plan!</h2>
+      <hr />
+      <p class="lead">
+        Whether youre looking to lean up or bulk up, we have a range of
+        gym/nutrition plans to help you out.
+      </p>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-4">
-      <div class="card center margin-top">
-        <img class="card-img-top" src="{% static 'img/dumbbell.png' %}" alt="Dumbbell" />
-        <div class="card-body">
-          <h5 class="card-title color-pink fitness-title">The "Bulk Up" Plan</h5>
-          <hr>
-          <p class="card-text color-pink">
-            This plan will cover all the ways you can bulk up. This will contain content on dietary and training guides that includes gym work.
-          </p>
-          <a href="#" class="btn btn-light color-orange">Order Now!</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-4">
-      <div class="card center margin-top">
-        <img class="card-img-top" src="{% static 'img/healthy.png' %}" alt="Fruit and water" />
-        <div class="card-body">
-          <h5 class="card-title color-pink fitness-title">The "Lean Up" Plan</h5>
-          <hr>
-          <p class="card-text color-pink">
-            This plan will cover how to become a much a leaner shape. This will contain content on dietary and training guides that includes gym work and endurance.
-          </p>
-          <a href="#" class="btn btn-light color-orange">Order Now!</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-sm-4">
-      <div class="card center margin-top ">
-        <img class="card-img-top" src="{% static 'img/cycling.png' %}" alt="Cycling" />
-        <div class="card-body">
-          <h5 class="card-title color-pink fitness-title">The "Healthy Living" Plan</h5>
-          <hr>
-          <p class="card-text color-pink">
-            This plan is for the people who want a more balanced plan. We will be providing different types of diets and exercises.
-          </p>
-          <a href="#" class="btn btn-light color-orange">Order Now!</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-  <div class="col-12 col-sm-4">
-  <div class="card center margin-top">
-        <img class="card-img-top" src="{% static 'img/justyoga.png' %}" alt="Watch" />
-        <div class="card-body">
-          <h5 class="card-title color-pink fitness-title">The "Just Yoga" Plan</h5>
-          <hr>
-          <p class="card-text color-pink">
-            This plan will be strictly directed for people wanting to do just yoga as part of their fitness. We will be providing you different yoga types and styles to do.
-          </p>
-          <a href="#" class="btn btn-light color-orange">Order Now!</a>
-        </div>
-      </div>
-  </div>
-  <div class="col-12 col-sm-4">
-  <div class="card center margin-top">
-        <img class="card-img-top" src="{% static 'img/parttime.png' %}" alt="Clock" />
-        <div class="card-body">
-          <h5 class="card-title color-pink fitness-title">The "Part Timer" Plan</h5>
-          <hr>
-          <p class="card-text color-pink">
-            This plan is for the people that struggle to find time to excercise. In this plan there will be a list of work outs to ease you into the fitness life. 
-          </p>
-          <a href="#" class="btn btn-light color-orange">Order Now!</a>
-        </div>
-      </div>
-  </div>
   </div>
 </div>
-{% endblock %}
+{% for plan in plans %}
+<div class="container-fluid">
+ <div class="row">
+    <div class="col-12 col-sm-4">
+      <div class="card center margin-top">
+        <div class="card-body">
+          <h5 class="card-title color-pink fitness-title">{{ plan.title }}</h5>
+          <hr>
+          <p class="card-text color-pink">
+            {{ plan.description }}
+          </p>
+          <div class="row">
+          <div class="col-6">
+          <a href="#" class="btn btn-light color-orange">Order Now!</a>
+          </div>
+          <div class="col-6">
+          <span class=size-b>£{{ plan.price }}</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+{% endfor %}{% endblock %}
