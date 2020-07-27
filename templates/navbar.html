@@ -8,6 +8,14 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				{% if request.user.is_authenticated %}
+                <li class="nav-item">
+					<a class="nav-link" href="{% url 'view_cart' %}">
+                            Cart
+                            {% if plan.price > 0 %}
+                            <label class="badge badge-warning"><i class="fa fa-gbp">{{ plan.price }}</i></label>
+                            {% endif %}
+                        </a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="{% url 'plans' %}">Plans</a>
 				</li>
