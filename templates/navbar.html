@@ -8,35 +8,34 @@
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				{% if request.user.is_authenticated %}
-                <li class="nav-item">
-					<a class="nav-link" href="{% url 'view_cart' %}">
-                            Cart
-                            {% if plan.price > 0 %}
-                            <label class="badge badge-warning"><i class="fa fa-gbp">{{ plan.price }}</i></label>
-                            {% endif %}
+                       <li class="nav-item">
+                        <a class="nav-link" href="{% url 'view_cart' %}"><i class="fa fa-shopping-cart"></i> Cart
+                           {% if product_count > 0 %}
+                           <label class="badge badge-warning">{{ product_count }}</label>
+                           {% endif %}
                         </a>
+                     </li>
+				<li class="nav-item">
+					<a class="nav-link" href="{% url 'plans' %}"><i class="fas fa-box-open"></i> Plans</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'plans' %}">Plans</a>
+					<a class="nav-link" href="{% url 'blog' %}"><i class="fas fa-rss-square"></i> Blog</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'blog' %}">Blog</a>
+					<a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-id-card"></i> Contact Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+					<a class="nav-link" href="{% url 'account_logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a>
 				</li>
 				{% else %}
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+					<a class="nav-link" href="{% url 'account_signup' %}"><i class="fas fa-plus-square"></i> Register</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'account_login' %}">Login</a>
+					<a class="nav-link" href="{% url 'account_login' %}"><i class="fas fa-sign-in-alt"></i> Login</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+					<a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-id-card"></i> Contact Us</a>
 				</li>
 			</ul>
 			{% endif %}

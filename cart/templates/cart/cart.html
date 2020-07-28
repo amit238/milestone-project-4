@@ -1,7 +1,43 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-<div class="container-fluid">
-<div class="row">
+{% block page_title %}Your Cart{% endblock %}
 
+{%block page_heading %}Your Cart{% endblock %}
+
+{% block content %}
+
+<div class="table-responsive order-form-container">
+   <table class="table">
+      <h4>Order Summary</h4>
+      <thead>
+         <tr>
+            <th scope="col">Plan</th>
+            <th scope="col">Price</th>
+            <th scope="col">Remove</th>
+         </tr>
+      </thead>
+      <tbody>
+         {% for item in cart_items %}
+         <tr>
+            <td scope="row">{{ plan.title }}</td>
+            <td>£{{ plan.price }}</td>
+            <td><a class="btn btn-sm btn-danger" href="{% url 'remove_from_cart' item.plans.id %}">Remove</a></td>
+         </tr>
+         {% endfor %}
+         <tr>
+            <td colspan="2"><b>Order Total</b></td>
+            <td><b>£{{ total }}</b></td>
+            <td class="hide-service-type"></td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <a class="btn btn-warning float-left cart-button-responsive" href="#">Proceed To
+               Checkout</a>
+               <a class="btn btn-primary float-left ml-2 cart-button-responsive"
+                  href="{% url 'plans' %}">Continue Shopping</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
 </div>
-</div>
+{% endblock %}
