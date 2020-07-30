@@ -71,10 +71,12 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # Required by Allauth
+                'django.template.context_processors.request',  # Required by Allauth
                 'django.template.context_processors.static',
                 'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
+                'cart.context.cart_contents',
+
             ],
         },
     },
@@ -90,7 +92,7 @@ AUTHENTICATION_BACKENDS = [
 
 ]
 
-SITE_ID= 1
+SITE_ID = 1
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
@@ -102,7 +104,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
 
 
 WSGI_APPLICATION = 'ms4.wsgi.application'
