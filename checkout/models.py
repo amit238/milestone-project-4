@@ -1,13 +1,16 @@
+import uuid
+
 from django.db import models
 from plans.models import Plans
 from django.conf import settings
+
+from plans.models import Plans
 
 
 class Order(models.Model):
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    plan = models.ForeignKey(Plans, null=True,
-                                on_delete=models.SET_NULL)
+    plan = models.ForeignKey(Plans, null=True, on_delete=models.SET_NULL)
     full_name = models.CharField(max_length=50, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
     country = models.CharField(max_length=40, blank=False)

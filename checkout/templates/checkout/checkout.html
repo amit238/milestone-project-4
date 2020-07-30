@@ -4,6 +4,9 @@
 
 {% load static %} 
 
+
+{% block page_title %} Fitness Freaks - Checkout {% endblock %}
+
 {% block content %}
 
 <div class="form-container base-wrapper">
@@ -11,6 +14,7 @@
       <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
          {% csrf_token %}
          <h4 class="color-pink center fitness-title">Personal Detail</h4>
+         <p class="color-pink center">Please note that we charge a small fee for delivery and will be added to the total</p>
          <hr>
          <div id="credit-card-errors" style="display:none">
             <div class="alert-message block-message error" id="stripe-error-message"></div>
