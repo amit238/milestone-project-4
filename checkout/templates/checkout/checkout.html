@@ -24,6 +24,10 @@
          <!-- A Stripe card element will go here -->
          <div class="form-group center">
           <div class="mb-3" id="card-element"></div>
+          <!-- Display Error Message -->
+          <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+          <!-- Pass the client secret to the view so we can get the payment intent id -->
+            <input type="hidden" value="{{ client_secret }}" name="client_secret">
             <input class="btn btn-light color-orange" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
          </div>
       </form>
