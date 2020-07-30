@@ -52,30 +52,6 @@ hr {
     width: 35%;
 }
 
-/*-----Background-----*/
-/* .bg-index {
-  background-image: url("/static/img/fitness.jpg");
-  background-size: cover;
-  height: 110%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  opacity: 0.7;
-  z-index: -1;
-} */
-
-/* .bg-plans {
-  background-image: url("/static/img/rope.jpg");
-  background-size: cover;
-  height: 200%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  opacity: 0.7;
-  z-index: -1;
-} */
-
-
 /*-----Navbar-----*/
 
 .navbar-light .navbar-nav .nav-link {
@@ -143,9 +119,6 @@ ul.nav a:hover {
   font-size: 1rem;
 }
 
-/*-----Plans-----*/
-
-
 /*-----Contact-----*/
 
 .jmb-contact {
@@ -154,18 +127,7 @@ ul.nav a:hover {
    color: #c638a0;
 }
 
-/*-----Blog-----*/
-
-/* .blog-title {
-    font-size: 1rem;
-    
-} */
-
 /*-----Cart-----*/
-
-/* .table {
-    text-align: center;
-} */
 
 .order-form-container {
   width: 70%;
