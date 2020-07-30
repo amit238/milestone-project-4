@@ -137,3 +137,81 @@ ul.nav a:hover {
   margin-left: auto;
   margin-top: 20px;
 }
+
+
+/*-----Checkout-----*/
+
+.form-css {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.form-container {
+  width: 40%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 1385px) {
+  .form-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .form-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+/*-----Stripe-----*/
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
