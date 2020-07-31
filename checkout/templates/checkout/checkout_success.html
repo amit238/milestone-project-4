@@ -1,0 +1,36 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+{% block page_title %} Fitness Freaks - Checkout Sucess! 
+
+{% endblock %} 
+
+{% block content %} 
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="color-pink center fitness-title margin-top">Your Purchase was successful!</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr>
+      <p class="color-pink center size">
+        Your order information is below. A confirmation email will be sent to
+        <strong>{{ order.email }}</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="row margin-top">
+    <div class="col-12 col-md-4">
+      <p class="mb-0 color-orange center">Order Number</p>
+    </div>
+    <div class="col-12 col-md-8">
+      <p class="mb-0 color-orange center"><strong>{{ order.order_number }}</strong></p>
+    </div>
+  </div>
+</section>
+{% endblock %}

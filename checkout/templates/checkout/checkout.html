@@ -14,7 +14,7 @@
       <form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
          {% csrf_token %}
          <h4 class="color-pink center fitness-title">Personal Detail</h4>
-         <p class="color-pink center">Please note that we charge a small fee for delivery and will be added to the total</p>
+         <p class="color-pink center">Please note that we charge a small fee for delivery and will be added to the total, you be charged a 10% increase of the plan price</p>
          <hr>
          <div id="credit-card-errors" style="display:none">
             <div class="alert-message block-message error" id="stripe-error-message"></div>

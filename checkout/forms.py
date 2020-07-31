@@ -9,6 +9,7 @@ class OrderForm(forms.ModelForm):
         model = Order
         fields = (
             'full_name',
+            'email',
             'phone_number',
             'country',
             'postcode',
