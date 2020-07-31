@@ -1,4 +1,8 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% block page_title %} Fitness Freaks - Add to Blog {% endblock %}
+
+{% block content %}
 
 <div class="container-fluid">
   <div class="card mb-4">
@@ -8,7 +12,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-12">
-          <form method="POST" action="edit_post">
+          <form method="POST" action="add_post">
             {% csrf_token %}
             <div class="form-group">
               <label for="formGroupExampleInput">Title</label>
@@ -20,7 +24,7 @@
             </div>
             <div class="div">
             <label for="formGroupExampleInput3"></label>
-            <button type="submit" class="btn btn-light color-orange">Edit Post</button>
+            <button type="submit" class="btn btn-light color-orange">Edit  Post</button>
             </div>
           </form>
         </div>

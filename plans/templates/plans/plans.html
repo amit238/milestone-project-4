@@ -18,9 +18,9 @@
 </div>
 {% for plan in plans %}
 <div class="container-fluid">
- <div class="row">
-    <div class="col-12 col-sm-4">
-      <div class="card center margin-top">
+ <div class="row plans">
+    <div class="col-12">
+      <div class="card center margin-top card-size">
       <img class="card-img-top" src="{{MEDIA_URL}}{{ plan.image }}" alt="Plans Image">
         <div class="card-body">
           <h5 class="card-title color-pink fitness-title">{{ plan.title }}</h5>

@@ -8,7 +8,7 @@ from django.conf import settings
 
 from plans.models import Plans
 
-4
+
 class Order(models.Model):
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
