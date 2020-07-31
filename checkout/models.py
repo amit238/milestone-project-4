@@ -12,7 +12,6 @@ from plans.models import Plans
 class Order(models.Model):
 
     order_number = models.CharField(max_length=32, null=False, editable=False)
-    plan = models.ForeignKey(Plans, null=True, on_delete=models.SET_NULL)
     email = models.EmailField(max_length=254, null=False, default='', blank=False)
     full_name = models.CharField(max_length=50, blank=False)
     phone_number = models.CharField(max_length=20, blank=False)
