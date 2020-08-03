@@ -1,1 +1,1 @@
-web: gunicorn fitness-freaks-ms4.wsgi:application
+web: gunicorn ms4.wsgi:application
