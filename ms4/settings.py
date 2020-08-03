@@ -26,7 +26,7 @@ SECRET_KEY = '1x=muf%xmbf9syv$y9h!4-a9jaz3)1(*mdz4d4bqe0sqs))z7z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['fitness-freaks-ms4.herokuapp.com', 'localhost']
 
 
 # Application definition
