@@ -23,6 +23,14 @@ body {
     color:#FF717C;
 }
 
+.color-orange-link {
+    color:#FF717C;
+}
+
+.color-orange-link:hover {
+    color:#FF717C;
+}
+
 label {
     color: #c638a0;
 }

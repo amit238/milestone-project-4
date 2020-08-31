@@ -12,7 +12,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-12">
-          <form method="POST">
+          <form action="{% url 'edit_post' post.id %}" method="POST">
             {% csrf_token %}
             <div class="form-group">
               <label for="formGroupExampleInput">Title</label>

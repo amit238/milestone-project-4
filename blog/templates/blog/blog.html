@@ -9,7 +9,7 @@
         <h2 class="display-4 fitness-title">Public Blog!</h2>
         <hr />
         <p class="lead">
-          Welcome to Fitness Freaks blog, where our customers talk about their journey. Whether you've just started or finished you can write anytime throughtout your journey! If you want to add to the blog please <a class="color-orange" href="{% url 'add_post' %}">click here!</a>
+          Welcome to Fitness Freaks blog, where our customers talk about their journey. Whether you've just started or finished you can write anytime throughtout your journey! If you want to add to the blog please <a class="color-orange-link" href="{% url 'add_post' %}">click here!</a>
         </p>
       </div>
     </div>
@@ -35,9 +35,14 @@
         </div>
       </div>
       <div class="row padding-top">
+      {% if request.user == post.author %}
         <div class="col-6"><a href="{% url 'edit_post' post.id %}" class="btn btn-light color-orange" title="Edit Review">Edit
       Blog</a></div>
+      <div class="col-6"><a href="{% url 'delete_post' post.id %}" class="btn btn-sm btn-danger" title="Delete Review">Delete
+      Blog</a></div>
+      {% endif %}
     </div>
   </div>
+</div>
 </div>
 {% endfor %} {% endblock %}
