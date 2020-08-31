@@ -1,5 +1,7 @@
 # Fitness Freaks
 
+[![Build Status](https://travis-ci.org/amit238/milestone-project-4.svg?branch=master)](https://travis-ci.org/amit238/milestone-project-4)
+
 Milestone Project 4
 
 This website is an e-commerce website where you can purchase Fitness Plans suited for you and You're also able to create blogs. You can find a demo to the website [here](https://fitness-freaks-ms4.herokuapp.com/)
@@ -88,39 +90,60 @@ I focused on only having 2 main colours for webpage to help with my `Structure` 
 
 * Used to create template of my project.
 
+9. Travis CI
+
+* To test my code
+
 ### My Wireframe can be seen here:
 
 #### Desktop
 
 [Home](https://wireframe.cc/xaR8RA)
+
 [Plans](https://wireframe.cc/L7u8Qn)
+
 [Blog](https://wireframe.cc/f5mkvE)
+
 [Login](https://wireframe.cc/GouWz6)
+
 [Register](https://wireframe.cc/G8e3yD)
+
 [Contact Us](https://wireframe.cc/J9JvwF)
 
 #### Tablet
 
 [Home](https://wireframe.cc/SaI7Ma)
-[Plans]()
-[Blog]()
-[Login]()
-[Register]()
-[Contact Us]()
+
+[Plans](https://wireframe.cc/ingcqx)
+
+[Blog](https://wireframe.cc/cTyBDA)
+
+[Login](https://wireframe.cc/f6SSOU)
+
+[Register](https://wireframe.cc/A8OLEU)
+
+[Contact Us](https://wireframe.cc/wstxwl)
 
 #### Mobile
 
-[Home]()
-[Plans]()
-[Blog]()
-[Login]()
-[Register]()
-[Contact Us]()
+[Home](https://wireframe.cc/QIPb9b)
+
+[Plans](https://wireframe.cc/7aTyuB)
+
+[Blog](https://wireframe.cc/5mnUUw)
+
+[Login](https://wireframe.cc/W0eGL8)
+
+[Register](https://wireframe.cc/f63xcR)
+
+[Contact Us](https://wireframe.cc/tAdsho)
 
 
 # Testing
 
-I had tested my website manually, i achieved this by acting as a new user when entering my webpage. I tested countless of different functionalities:
+I used Travis CI to test my code.
+
+I had also tested my website manually, i achieved this by acting as a new user when entering my webpage. I tested countless of different functionalities:
 
 ##### Register
 
@@ -217,3 +240,7 @@ I would also like to thank [Dennis Ivy](https://www.youtube.com/playlist?list=PL
 I had got my Logo using [Wix Logo Creater](https://www.wix.com/logo/maker)
 
 I got my Plans images using this [Illlustrations](https://illlustrations.co/) webpage
+
+# Acknowledgement
+
+When building my project intially, my workspace got deleted but i was able to retrieve it back from GitHub. So there maybe some duplicated/similar commits.
